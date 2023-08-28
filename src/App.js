@@ -1,55 +1,44 @@
-import logo from './assets/Linkly.png';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import './App.css';
 
+import { Stack } from 'react-bootstrap';
+import './App.css';
+import NavScrollExample from './components/nav_bar';
+import { Input,InputGroup,InputLeftElement,InputRightElement,Button } from '@chakra-ui/react'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <Navbar expand="lg" className="bg-body-tertiary">
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-      </header>
+      <div className='nav_style'>
+      <NavScrollExample ></NavScrollExample>
+      </div>
+      <div className='header'>
+       <text className='h_text'>Shorten Your Loooong Links :)</text>
+      </div>
+      <div>
+      <text className="subheading">Linkly is an efficient and easy-to-use URL shortening service that streamlines your<br></br> online experience.</text>
+      </div>
+      <div>
+      <Stack>
+      <div className='input_box'>
+      <InputGroup className='input_item' border='0px'>
+      <InputLeftElement
+      pointerEvents='none'
+      color='#353C4A'
+      fontSize='1.2em'
+      border='0px'
+      children='#'
+      margin='3px'
+
+      />
+      <Input type='tel' placeholder='Enter the Link Here' border='2px' borderColor='#353C4A' borderRadius='25px' size='lg'/>
+      <InputRightElement alignItems='center' margin='4px'>
+      <Button color='#144EE3' padding='2px' fontSize='15px' borderRadius='25px' alignItems='center'>
+      GO
+      </Button>
+      </InputRightElement>
+      </InputGroup>
+      </div>
+      </Stack>
+      </div>
+      
     </div>
   );
 }
