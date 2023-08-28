@@ -13,26 +13,23 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App {
+  /* background-color: #282c34; */
+  background-color: #0B101B;
+  background-image: url('./assets/Swirl.png');
+  background-position-x: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar{
+  /* padding-left: 18px;
+  padding-top: 18px; */
+  /* flex-direction: column; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
