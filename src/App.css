@@ -54,10 +54,29 @@
   margin-left: auto;
   margin-right: auto;
 }
-.input_item{
-  /* border: 20px #353C4A; */
-  
-  /* border-radius: 50%; */
+.table_div{
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 1200px;
+  /* visibility: ; */
+
+}
+.active{
+  color: #2CFA1F;
+}
+td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+.nav_button{
+  padding: 15px;
+  margin: 5px;
+  width:100px;
+
 }
 
 
